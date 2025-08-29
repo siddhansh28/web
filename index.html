@@ -3,35 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Siddhansh Govind - AI Engineer & Innovator</title>
-    <meta name="description" content="Portfolio of Siddhansh Govind - AI Engineer, MUN Enthusiast, and Tech Innovator">
+    <title>Siddhansh Govind - AI Engineer 🚀</title>
+    <meta name="description" content="Portfolio of Siddhansh Govind - AI Engineer, MUN Leader, and Tech Innovator">
     <meta name="keywords" content="AI Engineer, Machine Learning, MUN, Portfolio, Siddhansh Govind">
-    
+
     <!-- Favicon -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
-    
+
     <!-- External Libraries -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
     <!-- Custom Styles -->
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/glass.css">
     <link rel="stylesheet" href="styles/animations.css">
 </head>
 <body>
     <!-- Constellation Canvas Background -->
     <canvas id="constellation-canvas"></canvas>
     
+    <!-- Theme Toggle -->
+    <button id="theme-toggle" title="Toggle theme"><i class="fas fa-moon"></i></button>
+
     <!-- Navigation -->
-    <nav class="navbar" id="navbar">
+    <nav class="navbar glass" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
                 <span class="logo-text">SG</span>
             </div>
             <ul class="nav-menu" id="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
@@ -48,1082 +51,165 @@
             </div>
         </div>
     </nav>
-
+    
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section class="hero glass" id="home" data-aos="fade-in">
         <div class="hero-content">
-            <div class="hero-text" data-aos="fade-up">
-                <h1 class="hero-title">
-                    <span class="title-line">Hi, I'm</span>
-                    <span class="title-name">Siddhansh Govind</span>
-                    <span class="title-role">AI Engineer & Innovator</span>
-                </h1>
-                <p class="hero-description">
-                    Crafting intelligent solutions through cutting-edge AI and machine learning. 
-                    Passionate about MUN, technology, and creating meaningful impact through innovation.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">
-                        <i class="fas fa-rocket"></i>
-                        View My Work
-                    </a>
-                    <a href="#contact" class="btn btn-secondary">
-                        <i class="fas fa-envelope"></i>
-                        Let's Connect
-                    </a>
+            <div class="hero-text">
+                <h1>Hello, I'm <span class="highlight">Siddhansh Govind</span></h1>
+                <p class="subtitle">AI Engineer • MUN Leader • Tech Innovator</p>
+                <div class="ctas">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
                 </div>
             </div>
-            <div class="hero-image" data-aos="fade-left" data-aos-delay="200">
-                <div class="profile-card">
-                    <div class="profile-image">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" alt="Siddhansh Govind" id="profile-img">
-                        <div class="profile-status">
-                            <span class="status-dot"></span>
-                            <span class="status-text">Available for projects</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="hero-img">
+                <img src="https://avatars.githubusercontent.com/u/136469420?v=4" alt="Siddhansh Avatar" class="profile-img" />
             </div>
-        </div>
-        
-        <!-- Scroll Indicator -->
-        <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="800">
-            <div class="scroll-mouse">
-                <div class="scroll-wheel"></div>
-            </div>
-            <span>Scroll to explore</span>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">About Me</h2>
-                <p class="section-subtitle">Passionate about AI, technology, and creating meaningful impact</p>
-            </div>
-            
-            <div class="about-content">
-                <div class="about-text" data-aos="fade-right">
-                    <div class="about-intro">
-                        <h3>Building the Future with AI</h3>
-                        <p>I'm an AI Engineer and technology enthusiast with a deep passion for machine learning, artificial intelligence, and innovative problem-solving. My journey combines technical expertise with leadership experience gained through Model United Nations participation.</p>
-                        <p>Currently focused on developing cutting-edge AI solutions, I bring a unique perspective that merges analytical thinking with diplomatic skills, enabling me to tackle complex challenges from multiple angles.</p>
-                    </div>
-                    
-                    <div class="about-highlights">
-                        <div class="highlight-item">
-                            <i class="fas fa-brain"></i>
-                            <div>
-                                <h4>AI & Machine Learning</h4>
-                                <p>Specialized in deep learning, NLP, and computer vision</p>
-                            </div>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-globe"></i>
-                            <div>
-                                <h4>MUN Leadership</h4>
-                                <p>Experienced delegate and organizer in international forums</p>
-                            </div>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-code"></i>
-                            <div>
-                                <h4>Full-Stack Development</h4>
-                                <p>Building end-to-end solutions with modern technologies</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="about-stats" data-aos="fade-left" data-aos-delay="200">
-                    <div class="stat-item">
-                        <div class="stat-number" data-count="15">0</div>
-                        <div class="stat-label">AI Projects</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number" data-count="8">0</div>
-                        <div class="stat-label">MUN Conferences</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number" data-count="50">0</div>
-                        <div class="stat-label">Happy Clients</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number" data-count="3">0</div>
-                        <div class="stat-label">Years Experience</div>
-                    </div>
-                </div>
-            </div>
+    <section class="glass" id="about" data-aos="fade-up">
+        <h2>About Me</h2>
+        <p>
+            I’m an <b>AI Engineer</b> passionate about building the future. From leading Model United Nations to developing innovative projects with Machine Learning, I thrive at the intersection of <span class="highlight">technology</span>, <span class="highlight">leadership</span>, and <span class="highlight">creativity</span>.
+        </p>
+        <div class="stats">
+            <div><span class="stat-num">7+</span> Years Coding</div>
+            <div><span class="stat-num">15+</span> MUN Conferences</div>
+            <div><span class="stat-num">20+</span> Projects</div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">Skills & Technologies</h2>
-                <p class="section-subtitle">Tools and technologies I use to bring ideas to life</p>
-            </div>
-            
-            <div class="skills-grid">
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
-                    <div class="category-header">
-                        <i class="fas fa-robot"></i>
-                        <h3>AI & Machine Learning</h3>
-                    </div>
-                    <div class="skills-list">
-                        <div class="skill-item">
-                            <span class="skill-name">Python</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="95%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">TensorFlow</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">PyTorch</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">OpenAI API</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="88%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
-                    <div class="category-header">
-                        <i class="fas fa-code"></i>
-                        <h3>Web Development</h3>
-                    </div>
-                    <div class="skills-list">
-                        <div class="skill-item">
-                            <span class="skill-name">JavaScript</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="92%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">React</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="88%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Node.js</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">TypeScript</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="80%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
-                    <div class="category-header">
-                        <i class="fas fa-database"></i>
-                        <h3>Data & Cloud</h3>
-                    </div>
-                    <div class="skills-list">
-                        <div class="skill-item">
-                            <span class="skill-name">SQL</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">AWS</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="75%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Docker</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">MongoDB</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="78%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
-                    <div class="category-header">
-                        <i class="fas fa-users"></i>
-                        <h3>Leadership & Soft Skills</h3>
-                    </div>
-                    <div class="skills-list">
-                        <div class="skill-item">
-                            <span class="skill-name">Public Speaking</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="95%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Team Leadership</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Negotiation</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="88%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Research</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="92%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="glass" id="skills" data-aos="fade-up">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <div class="skill-card" data-skill="AI/ML"><i class="fas fa-robot"></i> AI & ML</div>
+            <div class="skill-card" data-skill="Web"><i class="fas fa-code"></i> Web Dev</div>
+            <div class="skill-card" data-skill="Cloud"><i class="fas fa-cloud"></i> Cloud</div>
+            <div class="skill-card" data-skill="Leadership"><i class="fas fa-users"></i> Leadership</div>
+        </div>
+        <div class="skill-bars">
+            <div class="bar-label">Python</div><div class="bar"><div class="fill" style="width: 95%"></div></div>
+            <div class="bar-label">TensorFlow</div><div class="bar"><div class="fill" style="width: 90%"></div></div>
+            <div class="bar-label">React</div><div class="bar"><div class="fill" style="width: 80%"></div></div>
+            <div class="bar-label">Diplomacy</div><div class="bar"><div class="fill" style="width: 85%"></div></div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">Featured Projects</h2>
-                <p class="section-subtitle">Showcasing my latest work in AI and technology</p>
+    <section class="glass" id="projects" data-aos="fade-up">
+        <h2>Projects</h2>
+        <div class="projects-list">
+            <!-- Example project cards -->
+            <div class="project-card" data-aos="fade-right">
+                <h3>AI Chatbot</h3>
+                <p>Intelligent assistant mimicking personality & knowledge base. <a href="#">Live Demo</a></p>
             </div>
-            
-            <div class="projects-filter" data-aos="fade-up" data-aos-delay="100">
-                <button class="filter-btn active" data-filter="all">All Projects</button>
-                <button class="filter-btn" data-filter="ai">AI & ML</button>
-                <button class="filter-btn" data-filter="web">Web Dev</button>
-                <button class="filter-btn" data-filter="mun">MUN Tools</button>
+            <div class="project-card" data-aos="fade-right">
+                <h3>MUN Speech Generator</h3>
+                <p>AI-powered tool for diplomatic speeches & resolutions. <a href="#">Try It</a></p>
             </div>
-            
-            <div class="projects-grid">
-                <div class="project-card" data-category="ai" data-aos="fade-up" data-aos-delay="200">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=500&h=300&fit=crop" alt="AI Chatbot">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">OpenAI</span>
-                            <span class="tag">NLP</span>
-                        </div>
-                        <h3 class="project-title">AI Personal Assistant</h3>
-                        <p class="project-description">
-                            Advanced conversational AI system with personality modeling and context awareness. 
-                            Capable of handling complex queries and maintaining engaging conversations.
-                        </p>
-                        <div class="project-stats">
-                            <div class="stat">
-                                <i class="fas fa-star"></i>
-                                <span>98% Accuracy</span>
-                            </div>
-                            <div class="stat">
-                                <i class="fas fa-users"></i>
-                                <span>1K+ Users</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card" data-category="mun" data-aos="fade-up" data-aos-delay="300">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=500&h=300&fit=crop" alt="MUN Generator">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#mun-generator" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-tags">
-                            <span class="tag">AI</span>
-                            <span class="tag">Research</span>
-                            <span class="tag">MUN</span>
-                        </div>
-                        <h3 class="project-title">MUN Speech Generator</h3>
-                        <p class="project-description">
-                            AI-powered tool for generating diplomatic speeches, position papers, and research materials 
-                            for Model United Nations conferences with country-specific perspectives.
-                        </p>
-                        <div class="project-stats">
-                            <div class="stat">
-                                <i class="fas fa-file-alt"></i>
-                                <span>500+ Speeches</span>
-                            </div>
-                            <div class="stat">
-                                <i class="fas fa-globe"></i>
-                                <span>50+ Countries</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="400">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop" alt="Analytics Dashboard">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">D3.js</span>
-                            <span class="tag">Analytics</span>
-                        </div>
-                        <h3 class="project-title">AI Analytics Dashboard</h3>
-                        <p class="project-description">
-                            Real-time analytics dashboard for monitoring AI model performance with interactive 
-                            visualizations and automated reporting capabilities.
-                        </p>
-                        <div class="project-stats">
-                            <div class="stat">
-                                <i class="fas fa-chart-line"></i>
-                                <span>Real-time</span>
-                            </div>
-                            <div class="stat">
-                                <i class="fas fa-database"></i>
-                                <span>10TB+ Data</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card" data-category="ai" data-aos="fade-up" data-aos-delay="500">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1555255707-c07966088b7b?w=500&h=300&fit=crop" alt="Computer Vision">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-tags">
-                            <span class="tag">Computer Vision</span>
-                            <span class="tag">PyTorch</span>
-                            <span class="tag">CNN</span>
-                        </div>
-                        <h3 class="project-title">Smart Vision System</h3>
-                        <p class="project-description">
-                            Advanced computer vision system for object detection and recognition with 
-                            real-time processing capabilities and high accuracy rates.
-                        </p>
-                        <div class="project-stats">
-                            <div class="stat">
-                                <i class="fas fa-eye"></i>
-                                <span>99.2% Accuracy</span>
-                            </div>
-                            <div class="stat">
-                                <i class="fas fa-clock"></i>
-                                <span>Real-time</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="600">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=500&h=300&fit=crop" alt="E-commerce Platform">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-tags">
-                            <span class="tag">MERN</span>
-                            <span class="tag">Stripe</span>
-                            <span class="tag">AWS</span>
-                        </div>
-                        <h3 class="project-title">Smart E-commerce Platform</h3>
-                        <p class="project-description">
-                            Full-stack e-commerce solution with AI-powered recommendations, advanced analytics, 
-                            and seamless payment integration for enhanced user experience.
-                        </p>
-                        <div class="project-stats">
-                            <div class="stat">
-                                <i class="fas fa-shopping-cart"></i>
-                                <span>10K+ Orders</span>
-                            </div>
-                            <div class="stat">
-                                <i class="fas fa-money-bill"></i>
-                                <span>$500K+ Revenue</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card" data-category="mun" data-aos="fade-up" data-aos-delay="700">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=500&h=300&fit=crop" alt="MUN Platform">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-tags">
-                            <span class="tag">Vue.js</span>
-                            <span class="tag">Socket.io</span>
-                            <span class="tag">MUN</span>
-                        </div>
-                        <h3 class="project-title">Virtual MUN Platform</h3>
-                        <p class="project-description">
-                            Comprehensive virtual Model UN platform with real-time collaboration, 
-                            voting systems, and document sharing for remote conferences.
-                        </p>
-                        <div class="project-stats">
-                            <div class="stat">
-                                <i class="fas fa-users"></i>
-                                <span>2K+ Delegates</span>
-                            </div>
-                            <div class="stat">
-                                <i class="fas fa-video"></i>
-                                <span>25+ Conferences</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="project-card" data-aos="fade-right">
+                <h3>Glassmorphism Portfolio</h3>
+                <p>Modern responsive UI with glass-like effects. <a href="#">View Code</a></p>
             </div>
         </div>
     </section>
 
-    <!-- Experience Timeline -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">Experience Timeline</h2>
-                <p class="section-subtitle">My journey through technology and leadership</p>
-            </div>
-            
-            <div class="timeline">
-                <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
-                    <div class="timeline-date">2024 - Present</div>
-                    <div class="timeline-content">
-                        <div class="timeline-icon">
-                            <i class="fas fa-robot"></i>
-                        </div>
-                        <h3>Senior AI Engineer</h3>
-                        <h4>TechCorp Solutions</h4>
-                        <p>Leading AI initiatives and developing cutting-edge machine learning solutions. Specialized in NLP and computer vision projects with a focus on scalable deployment.</p>
-                        <div class="timeline-achievements">
-                            <span class="achievement">Improved model accuracy by 35%</span>
-                            <span class="achievement">Led team of 8 engineers</span>
-                            <span class="achievement">$2M+ cost savings</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="timeline-item" data-aos="fade-left" data-aos-delay="200">
-                    <div class="timeline-date">2023 - 2024</div>
-                    <div class="timeline-content">
-                        <div class="timeline-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <h3>Full Stack Developer</h3>
-                        <h4>Innovation Labs</h4>
-                        <p>Developed and maintained web applications using modern technologies. Collaborated with cross-functional teams to deliver high-quality software solutions.</p>
-                        <div class="timeline-achievements">
-                            <span class="achievement">Built 15+ applications</span>
-                            <span class="achievement">99.9% uptime achieved</span>
-                            <span class="achievement">Mentored 5 junior developers</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="timeline-item" data-aos="fade-right" data-aos-delay="300">
-                    <div class="timeline-date">2022 - 2023</div>
-                    <div class="timeline-content">
-                        <div class="timeline-icon">
-                            <i class="fas fa-globe"></i>
-                        </div>
-                        <h3>MUN Secretary-General</h3>
-                        <h4>University Model UN</h4>
-                        <p>Organized and led international conferences with 500+ delegates. Developed diplomatic skills and gained expertise in international relations and conflict resolution.</p>
-                        <div class="timeline-achievements">
-                            <span class="achievement">Organized 3 major conferences</span>
-                            <span class="achievement">500+ international delegates</span>
-                            <span class="achievement">Best Conference Award</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="timeline-item" data-aos="fade-left" data-aos-delay="400">
-                    <div class="timeline-date">2021 - 2022</div>
-                    <div class="timeline-content">
-                        <div class="timeline-icon">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
-                        <h3>Software Engineering Intern</h3>
-                        <h4>StartupX</h4>
-                        <p>Contributed to product development and gained hands-on experience in agile development. Worked on both frontend and backend technologies.</p>
-                        <div class="timeline-achievements">
-                            <span class="achievement">Shipped 5 major features</span>
-                            <span class="achievement">Reduced load time by 40%</span>
-                            <span class="achievement">Full-time offer received</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="timeline-item" data-aos="fade-right" data-aos-delay="500">
-                    <div class="timeline-date">2020 - 2021</div>
-                    <div class="timeline-content">
-                        <div class="timeline-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <h3>Computer Science Student</h3>
-                        <h4>Technology University</h4>
-                        <p>Focused on AI and machine learning coursework. Participated in hackathons and coding competitions, building a strong foundation in algorithms and data structures.</p>
-                        <div class="timeline-achievements">
-                            <span class="achievement">3.9/4.0 GPA</span>
-                            <span class="achievement">5 hackathon wins</span>
-                            <span class="achievement">Dean's List recognition</span>
-                        </div>
-                    </div>
+    <!-- Experience Section -->
+    <section class="glass" id="experience" data-aos="fade-up">
+        <h2>Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span>2024</span>
+                    <h3>AI Engineer</h3>
+                    <p>Developed production ML models for top startups.</p>
                 </div>
             </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span>2022</span>
+                    <h3>MUN Chair & Delegate</h3>
+                    <p>Led and won awards at national conferences.</p>
+                </div>
+            </div>
+            <!-- Add more timeline items as needed -->
         </div>
     </section>
 
     <!-- Achievements Section -->
-    <section id="achievements" class="achievements">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">Achievements & Recognition</h2>
-                <p class="section-subtitle">Milestones and awards that mark my journey</p>
+    <section class="glass" id="achievements" data-aos="fade-up">
+        <h2>Achievements</h2>
+        <div class="achievements-list">
+            <div class="achievement-card" data-aos="flip-left">
+                <h3>Best Delegate - MUN</h3>
             </div>
-            
-            <div class="achievements-grid">
-                <div class="achievement-card" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="achievement-icon">
-                        <i class="fas fa-trophy"></i>
-                    </div>
-                    <h3>Best AI Innovation Award</h3>
-                    <p>TechConf 2024</p>
-                    <span class="achievement-year">2024</span>
-                </div>
-                
-                <div class="achievement-card" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="achievement-icon">
-                        <i class="fas fa-medal"></i>
-                    </div>
-                    <h3>Outstanding Delegate</h3>
-                    <p>Harvard MUN Conference</p>
-                    <span class="achievement-year">2023</span>
-                </div>
-                
-                <div class="achievement-card" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="achievement-icon">
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h3>Hackathon Winner</h3>
-                    <p>AI for Good Challenge</p>
-                    <span class="achievement-year">2023</span>
-                </div>
-                
-                <div class="achievement-card" data-aos="zoom-in" data-aos-delay="400">
-                    <div class="achievement-icon">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <h3>AWS Certified</h3>
-                    <p>Machine Learning Specialty</p>
-                    <span class="achievement-year">2023</span>
-                </div>
-                
-                <div class="achievement-card" data-aos="zoom-in" data-aos-delay="500">
-                    <div class="achievement-icon">
-                        <i class="fas fa-award"></i>
-                    </div>
-                    <h3>Research Publication</h3>
-                    <p>IEEE AI Conference</p>
-                    <span class="achievement-year">2022</span>
-                </div>
-                
-                <div class="achievement-card" data-aos="zoom-in" data-aos-delay="600">
-                    <div class="achievement-icon">
-                        <i class="fas fa-crown"></i>
-                    </div>
-                    <h3>Leadership Excellence</h3>
-                    <p>University Recognition</p>
-                    <span class="achievement-year">2022</span>
-                </div>
+            <div class="achievement-card" data-aos="flip-left">
+                <h3>AI Hackathon Winner</h3>
+            </div>
+            <div class="achievement-card" data-aos="flip-left">
+                <h3>Top 1% Kaggle</h3>
             </div>
         </div>
     </section>
 
     <!-- Blog Section -->
-    <section id="blog" class="blog">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">Latest Blog Posts</h2>
-                <p class="section-subtitle">Sharing insights on AI, technology, and leadership</p>
+    <section class="glass" id="blog" data-aos="fade-up">
+        <h2>Blog</h2>
+        <div class="blog-list">
+            <div class="blog-card">
+                <h3>How AI is Changing the World</h3>
+                <p>Insights into the impact of artificial intelligence.</p>
             </div>
-            
-            <div class="blog-grid">
-                <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="blog-image">
-                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=250&fit=crop" alt="Future of AI">
-                        <div class="blog-category">AI & Technology</div>
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-meta">
-                            <span class="blog-date">
-                                <i class="fas fa-calendar"></i>
-                                March 15, 2024
-                            </span>
-                            <span class="blog-read-time">
-                                <i class="fas fa-clock"></i>
-                                5 min read
-                            </span>
-                        </div>
-                        <h3 class="blog-title">The Future of AI in Everyday Life</h3>
-                        <p class="blog-excerpt">
-                            Exploring how artificial intelligence is reshaping our daily experiences and what we can expect in the coming years...
-                        </p>
-                        <a href="#" class="blog-link">
-                            Read More <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </article>
-                
-                <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="blog-image">
-                        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=400&h=250&fit=crop" alt="MUN Leadership">
-                        <div class="blog-category">Leadership</div>
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-meta">
-                            <span class="blog-date">
-                                <i class="fas fa-calendar"></i>
-                                March 10, 2024
-                            </span>
-                            <span class="blog-read-time">
-                                <i class="fas fa-clock"></i>
-                                7 min read
-                            </span>
-                        </div>
-                        <h3 class="blog-title">Leadership Lessons from Model UN</h3>
-                        <p class="blog-excerpt">
-                            How participating in Model United Nations conferences has shaped my approach to leadership and diplomacy...
-                        </p>
-                        <a href="#" class="blog-link">
-                            Read More <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </article>
-                
-                <article class="blog-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="blog-image">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop" alt="Machine Learning">
-                        <div class="blog-category">Machine Learning</div>
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-meta">
-                            <span class="blog-date">
-                                <i class="fas fa-calendar"></i>
-                                March 5, 2024
-                            </span>
-                            <span class="blog-read-time">
-                                <i class="fas fa-clock"></i>
-                                8 min read
-                            </span>
-                        </div>
-                        <h3 class="blog-title">Building Scalable ML Pipelines</h3>
-                        <p class="blog-excerpt">
-                            A comprehensive guide to designing and implementing machine learning pipelines that scale with your business needs...
-                        </p>
-                        <a href="#" class="blog-link">
-                            Read More <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </article>
+            <div class="blog-card">
+                <h3>Leadership Lessons from MUN</h3>
+                <p>Diplomatic skills for the tech era.</p>
             </div>
         </div>
     </section>
 
     <!-- AI Tools Section -->
-    <section id="tools" class="ai-tools">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">AI-Powered Tools</h2>
-                <p class="section-subtitle">Innovative tools to enhance productivity and creativity</p>
-            </div>
-            
-            <div class="tools-grid">
-                <div class="tool-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="tool-icon">
-                        <i class="fas fa-comments"></i>
-                    </div>
-                    <h3>AI Chat Assistant</h3>
-                    <p>Chat with an AI that mimics my personality and knowledge base. Get insights on AI, MUN, and technology topics.</p>
-                    <button class="tool-btn" onclick="openChatModal()">
-                        <i class="fas fa-comment-dots"></i>
-                        Start Chatting
-                    </button>
-                </div>
-                
-                <div class="tool-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="tool-icon">
-                        <i class="fas fa-globe-americas"></i>
-                    </div>
-                    <h3>MUN Speech Generator</h3>
-                    <p>Generate diplomatic speeches, position papers, and research materials for Model UN conferences with AI assistance.</p>
-                    <button class="tool-btn" onclick="openMunModal()">
-                        <i class="fas fa-microphone"></i>
-                        Generate Speech
-                    </button>
-                </div>
-                
-                <div class="tool-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="tool-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3>AI Project Advisor</h3>
-                    <p>Get personalized advice on AI and ML projects, including architecture recommendations and best practices.</p>
-                    <button class="tool-btn" onclick="openAdvisorModal()">
-                        <i class="fas fa-lightbulb"></i>
-                        Get Advice
-                    </button>
-                </div>
-            </div>
+    <section class="glass" id="tools" data-aos="fade-up">
+        <h2>AI Tools</h2>
+        <div class="tools-list">
+            <a href="#" class="tool-btn">AI Chat Assistant</a>
+            <a href="#" class="tool-btn">MUN Speech Generator</a>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">Let's Connect</h2>
-                <p class="section-subtitle">Ready to collaborate on something amazing?</p>
-            </div>
-            
-            <div class="contact-content">
-                <div class="contact-info" data-aos="fade-right">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Email Me</h3>
-                            <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2c5f454848444d425f44024b435a4542486c49414d4540024f4341">[email&#160;protected]</a></p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Call Me</h3>
-                            <p>+1 (555) 123-4567</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Location</h3>
-                            <p>San Francisco, CA</p>
-                        </div>
-                    </div>
-                    
-                    <div class="social-links">
-                        <a href="#" class="social-link">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <form class="contact-form" data-aos="fade-left" id="contact-form">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" required>
-                        <label for="name">Your Name</label>
-                    </div>
-                    
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" required>
-                        <label for="email">Your Email</label>
-                    </div>
-                    
-                    <div class="form-group">
-                        <input type="text" id="subject" name="subject" required>
-                        <label for="subject">Subject</label>
-                    </div>
-                    
-                    <div class="form-group">
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                        <label for="message">Your Message</label>
-                    </div>
-                    
-                    <button type="submit" class="submit-btn">
-                        <i class="fas fa-paper-plane"></i>
-                        Send Message
-                    </button>
-                </form>
-            </div>
-        </div>
+    <section class="glass" id="contact" data-aos="fade-up">
+        <h2>Contact Me</h2>
+        <form class="contact-form" autocomplete="off">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+        <p class="contact-social">
+            <a href="mailto:your@email.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://linkedin.com/in/siddhanshgovind"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/siddhansh28"><i class="fab fa-github"></i></a>
+        </p>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Siddhansh Govind</h3>
-                    <p>AI Engineer & Technology Innovator passionate about creating meaningful impact through intelligent solutions.</p>
-                    <div class="footer-social">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fas fa-envelope"></i></a>
-                    </div>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="#">AI Consulting</a></li>
-                        <li><a href="#">Web Development</a></li>
-                        <li><a href="#">MUN Training</a></li>
-                        <li><a href="#">Technical Writing</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Contact Info</h4>
-                    <p><i class="fas fa-envelope"></i> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f18298959599909f8299df969e87989f95b1949c90989ddf929e9c">[email&#160;protected]</a></p>
-                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
-                    <p><i class="fas fa-map-marker-alt"></i> San Francisco, CA</p>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2024 Siddhansh Govind. All rights reserved.</p>
-                <p>Built with passion and cutting-edge technology.</p>
-            </div>
-        </div>
+    <footer class="glass" id="footer">
+        <p>&copy; 2024 Siddhansh Govind. Built with 💡, AI, and diplomacy.</p>
     </footer>
 
-    <!-- AI Chat Modal -->
-    <div id="chat-modal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3><i class="fas fa-robot"></i> Chat with Siddhansh AI</h3>
-                <span class="close" onclick="closeChatModal()">&times;</span>
-            </div>
-            <div class="chat-container">
-                <div class="chat-messages" id="chat-messages">
-                    <div class="message bot-message">
-                        <div class="message-avatar">
-                            <i class="fas fa-robot"></i>
-                        </div>
-                        <div class="message-content">
-                            <p>Hi! I'm Siddhansh's AI assistant. I have his personality and knowledge about AI, MUN, and technology. How can I help you today?</p>
-                            <span class="message-time">Just now</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="chat-input-container">
-                    <input type="text" id="chat-input" placeholder="Type your message..." onkeypress="handleChatKeypress(event)">
-                    <button id="send-btn" onclick="sendMessage()">
-                        <i class="fas fa-paper-plane"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- External Libraries JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/js/all.min.js"></script>
 
-    <!-- MUN Generator Modal -->
-    <div id="mun-modal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3><i class="fas fa-globe-americas"></i> MUN Speech Generator</h3>
-                <span class="close" onclick="closeMunModal()">&times;</span>
-            </div>
-            <div class="mun-generator">
-                <form id="mun-form">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="country">Country/Delegation</label>
-                            <select id="country" name="country" required>
-                                <option value="">Select Country</option>
-                                <option value="united-states">United States</option>
-                                <option value="china">China</option>
-                                <option value="russia">Russia</option>
-                                <option value="united-kingdom">United Kingdom</option>
-                                <option value="france">France</option>
-                                <option value="germany">Germany</option>
-                                <option value="japan">Japan</option>
-                                <option value="india">India</option>
-                                <option value="brazil">Brazil</option>
-                                <option value="canada">Canada</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="committee">Committee</label>
-                            <select id="committee" name="committee" required>
-                                <option value="">Select Committee</option>
-                                <option value="unga">UN General Assembly</option>
-                                <option value="unsc">UN Security Council</option>
-                                <option value="ecosoc">Economic and Social Council</option>
-                                <option value="unhrc">UN Human Rights Council</option>
-                                <option value="unep">UN Environment Programme</option>
-                                <option value="who">World Health Organization</option>
-                            </select>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="topic">Topic/Agenda</label>
-                        <input type="text" id="topic" name="topic" placeholder="e.g., Climate Change Mitigation Strategies" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="speech-type">Speech Type</label>
-                        <select id="speech-type" name="speech-type" required>
-                            <option value="">Select Type</option>
-                            <option value="opening">Opening Statement</option>
-                            <option value="position-paper">Position Paper</option>
-                            <option value="resolution">Draft Resolution</option>
-                            <option value="amendment">Amendment</option>
-                            <option value="closing">Closing Statement</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="key-points">Key Points (Optional)</label>
-                        <textarea id="key-points" name="key-points" rows="3" placeholder="Enter specific points you want to emphasize..."></textarea>
-                    </div>
-                    
-                    <button type="submit" class="generate-btn">
-                        <i class="fas fa-magic"></i>
-                        Generate MUN Content
-                    </button>
-                </form>
-                
-                <div id="mun-output" class="mun-output" style="display: none;">
-                    <div class="output-header">
-                        <h4>Generated Content</h4>
-                        <div class="output-actions">
-                            <button onclick="copyMunContent()" class="action-btn">
-                                <i class="fas fa-copy"></i> Copy
-                            </button>
-                            <button onclick="downloadMunContent()" class="action-btn">
-                                <i class="fas fa-download"></i> Download
-                            </button>
-                        </div>
-                    </div>
-                    <div class="output-content" id="mun-content"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Project Advisor Modal -->
-    <div id="advisor-modal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3><i class="fas fa-brain"></i> AI Project Advisor</h3>
-                <span class="close" onclick="closeAdvisorModal()">&times;</span>
-            </div>
-            <div class="advisor-content">
-                <div class="advisor-form">
-                    <div class="form-group">
-                        <label for="project-type">Project Type</label>
-                        <select id="project-type" name="project-type">
-                            <option value="machine-learning">Machine Learning</option>
-                            <option value="deep-learning">Deep Learning</option>
-                            <option value="nlp">Natural Language Processing</option>
-                            <option value="computer-vision">Computer Vision</option>
-                            <option value="web-development">Web Development</option>
-                            <option value="data-science">Data Science</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="project-description">Project Description</label>
-                        <textarea id="project-description" name="project-description" rows="4" placeholder="Describe your project idea, goals, and any specific challenges you're facing..."></textarea>
-                    </div>
-                    
-                    <button onclick="getProjectAdvice()" class="advisor-btn">
-                        <i class="fas fa-lightbulb"></i>
-                        Get AI Advice
-                    </button>
-                </div>
-                
-                <div id="advisor-output" class="advisor-output" style="display: none;">
-                    <div class="advice-content" id="advice-content"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Scripts -->
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- Custom Scripts -->
     <script src="js/constellation.js"></script>
-    <script src="js/animations.js"></script>
-    <script src="js/interactions.js"></script>
-    <script src="js/ai-chat.js"></script>
-    <script src="js/mun-generator.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
